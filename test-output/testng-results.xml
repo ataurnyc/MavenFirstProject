@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[****** Test case 1 started*********]]>
+    </line>
+    <line>
+      <![CDATA[Test case 1 suceessfully passed]]>
+    </line>
+    <line>
+      <![CDATA[Test case 2 suceessfully passed]]>
+    </line>
+    <line>
+      <![CDATA[Test case 3 suceessfully passed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-02-09T08:54:24 IST" name="Suite" finished-at="2022-02-09T08:54:44 IST" duration-ms="20383">
+    <groups>
+    </groups>
+    <test started-at="2022-02-09T08:54:24 IST" name="Test" finished-at="2022-02-09T08:54:44 IST" duration-ms="20383">
+      <class name="com.xyz.MavenExample2.Test2">
+        <test-method signature="t1_openBrowser()[pri:0, instance:com.xyz.MavenExample2.Test2@be64738]" started-at="2022-02-09T08:54:24 IST" name="t1_openBrowser" description="This is our first test cases" finished-at="2022-02-09T08:54:26 IST" duration-ms="2290" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[****** Test case 1 started*********]]>
+            </line>
+            <line>
+              <![CDATA[Test case 1 suceessfully passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- t1_openBrowser -->
+        <test-method signature="t2_openURL()[pri:0, instance:com.xyz.MavenExample2.Test2@be64738]" started-at="2022-02-09T08:54:26 IST" name="t2_openURL" finished-at="2022-02-09T08:54:30 IST" duration-ms="4032" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test case 2 suceessfully passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- t2_openURL -->
+        <test-method signature="t3_search(java.lang.String)[pri:0, instance:com.xyz.MavenExample2.Test2@be64738]" started-at="2022-02-09T08:54:30 IST" name="t3_search" finished-at="2022-02-09T08:54:41 IST" duration-ms="10851" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test case 3 suceessfully passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- t3_search -->
+        <test-method signature="t5_closeBrowser()[pri:0, instance:com.xyz.MavenExample2.Test2@be64738]" started-at="2022-02-09T08:54:41 IST" name="t5_closeBrowser" finished-at="2022-02-09T08:54:41 IST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t5_closeBrowser -->
+        <test-method signature="t4_result()[pri:0, instance:com.xyz.MavenExample2.Test2@be64738]" started-at="2022-02-09T08:54:41 IST" name="t4_result" finished-at="2022-02-09T08:54:44 IST" depends-on-methods="com.xyz.MavenExample2.Test2.t3_search" duration-ms="3017" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Mayank-Macbook.local', ip: '2405:201:6812:7804:805b:6e17:b85a:1e9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96f0618d78af7db35ec68641ead66425, findElement {using=partial link text, value=New York City - Wikipedia}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /var/folders/hc/bxv1wnkn3bd...}, goog:chromeOptions: {debuggerAddress: localhost:51757}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51757/devtoo..., se:cdpVersion: 98.0.4758.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 96f0618d78af7db35ec68641ead66425]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Mayank-Macbook.local', ip: '2405:201:6812:7804:805b:6e17:b85a:1e9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96f0618d78af7db35ec68641ead66425, findElement {using=partial link text, value=New York City - Wikipedia}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /var/folders/hc/bxv1wnkn3bd...}, goog:chromeOptions: {debuggerAddress: localhost:51757}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51757/devtoo..., se:cdpVersion: 98.0.4758.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 96f0618d78af7db35ec68641ead66425
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at com.xyz.MavenExample2.Test2.t4_result(Test2.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t4_result -->
+      </class> <!-- com.xyz.MavenExample2.Test2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
