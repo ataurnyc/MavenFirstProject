@@ -15,7 +15,7 @@ public class Test2 {
 	@Parameters ({"browser"})
 	@Test(description= "This is our first test cases")
 	public void t1_openBrowser(String browser) throws InterruptedException {
-		if () {
+		
 		Reporter.log("****** Test case 1 started*********");
 		System.setProperty("webdriver.chrome.driver", "Driver/chromedriver");
 		driver = new ChromeDriver();
